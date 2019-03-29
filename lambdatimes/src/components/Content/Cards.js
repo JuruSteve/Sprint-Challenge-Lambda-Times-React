@@ -5,15 +5,15 @@ import styled from "styled-components";
 
 const Cards = props => {
   return (
-    <CardsStyles>
+    <CardStyles>
       {props.cards.map((card, i) => {
         return <Card card={card} key={i} />;
       })}
-    </CardsStyles>
+    </CardStyles>
   );
 };
 
-const CardsStyles = styled.div`
+const CardStyles = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: none;
